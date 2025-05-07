@@ -1,0 +1,160 @@
+/* SECCIÓN 1: Imagen + Bienvenida */
+.seccion-bienvenida {
+  background-color: white;
+  padding: 2rem 2rem; /* Menor padding vertical */
+  display: flex;
+  justify-content: center;
+}
+
+.bienvenida-contenido {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 4rem;
+  align-items: center;
+}
+
+.bienvenida-con-imagen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.texto {
+  flex: 1;
+  font-family: serif;
+  color: black;
+}
+
+.texto .subtitulo {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: gray;
+}
+
+.texto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.texto p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Imagen 1 */
+.imagen-transicion {
+  flex: 1;
+  opacity: 0;
+  animation: slideInRight 1.5s ease forwards;
+}
+
+.imagen-transicion img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+/* Animación */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* SECCIÓN 2: Imagen y Texto */
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 2rem 4rem; /* Menor padding */
+  margin-top: 0; /* Eliminar espacio excesivo */
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+}
+
+.info-image {
+  flex: 1;
+  animation: fadeInLeft 1s ease-out forwards;
+  max-width: 600px;
+}
+
+.info-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.info-text {
+  flex: 1;
+  font-family: 'Georgia', serif;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.info-text h2 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.info-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Animación */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .bienvenida-contenido,
+  .info-section {
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .bienvenida-con-imagen,
+  .info-section {
+    gap: 2rem;
+  }
+
+  .imagen-transicion img,
+  .info-image img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .texto,
+  .info-text {
+    max-width: 100%;
+  }
+}
+
+
+
+
+

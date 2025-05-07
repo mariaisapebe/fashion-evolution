@@ -1,0 +1,102 @@
+/* Reset básico y box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fuentes */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.titulo,
+.logo,
+.main-title {
+  font-family: 'EB Garamond', serif;
+}
+
+/* Menú de navegación */
+.main-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background-color: black;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+/* Enlaces del menú */
+.nav-links,
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a,
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: gray;
+}
+
+/* Header con video de fondo */
+.hero-header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Video de fondo */
+.bg-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Título principal */
+.main-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* Fuente alternativa */
+.cal-sans-regular {
+  font-family: "Cal Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
